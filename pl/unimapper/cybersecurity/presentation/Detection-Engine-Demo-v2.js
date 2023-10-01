@@ -4,8 +4,8 @@
 // @version      0.1
 // @description  Blocks access to known malicious sites and informs users
 // @author       Krystian Kluczkiewicz
-// @match        *://eb5e-5-173-42-36.ngrok.io/*
-// @icon         https://www.google.com/s2/favicons?sz=64&domain=yahoo.com
+// @match        *://9e7b-5-173-42-36.ngrok.io/*
+// @icon         https://www.google.com/s2/favicons?sz=64&domain=wp.pl
 // @grant        none
 // ==/UserScript==
 
@@ -13,10 +13,11 @@
     'use strict';
 
     // Replace the entire content of the page with a styled warning about the malicious site.
+    window.location.href = "https://cyberscout.vercel.app/";
     document.documentElement.innerHTML = `
 
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
